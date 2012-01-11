@@ -22,3 +22,8 @@ def is_prime(num):
 			return False
 		
 	return True
+	
+def is_palindrome(num):
+	if str(num) == str(num)[::-1]:
+		return True
+	return False
