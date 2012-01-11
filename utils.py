@@ -1,3 +1,11 @@
+def fibs(limit):
+	""" Calculate the Fibbonacci numbers up to a given limit"""
+	a, b = 0, 1
+	while a < limit:
+		yield a
+		a, b = b, a + b
+		
+		
 def factors_of(num):
 	limit = int(num**0.5)+1
 	i = 1
@@ -5,6 +13,7 @@ def factors_of(num):
 		if num % i == 0:
 			yield i
 		i += 1
+
 
 def is_prime(num):
 	if num < 2:

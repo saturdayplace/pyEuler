@@ -1,8 +1,4 @@
-def fibs():
-	a, b = 0, 1
-	while a < 4000000:
-		yield a
-		a, b = b, a + b
+from utils import fibs
 	
-fib_list = [i for i in fibs() if i % 2 == 0]
+fib_list = [i for i in fibs(4000000) if i % 2 == 0]
 print sum(fib_list)
