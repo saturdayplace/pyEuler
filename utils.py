@@ -1,5 +1,3 @@
-from primes import PRIMES
-
 def fibs(limit):
 	""" Calculate the Fibbonacci numbers up to a given limit"""
 	a, b = 0, 1
@@ -23,6 +21,7 @@ def factors_of(num):
 
 
 def prime_factors_of(num):
+	from primes import PRIMES
 	factors = []
 	
 	if num == 1:
@@ -40,9 +39,6 @@ def prime_factors_of(num):
 		
 
 def is_prime(num):
-	if num in PRIMES:
-		return True
-		
 	if num == 1:
 		return False
 		
