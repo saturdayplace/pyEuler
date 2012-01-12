@@ -1,6 +1,6 @@
 from utils import factors_of, is_prime
 
-factors = [i for i in factors_of(600851475143)]
+factors = factors_of(600851475143)
 
 prime_factors = []
 
