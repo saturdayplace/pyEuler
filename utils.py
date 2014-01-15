@@ -1,3 +1,5 @@
+from math import sqrt
+
 def fibs(limit):
 	""" Calculate the Fibbonacci numbers up to a given limit"""
 	a, b = 0, 1
@@ -9,7 +11,7 @@ def fibs(limit):
 def factors_of(num):
 	# A generator for gettting all the factors
 	def generate_factors(num):
-		limit = int(num/2)
+		limit = sqrt(num) + 1
 		i = 1
 		while i <= limit:
 			if num % i == 0:
